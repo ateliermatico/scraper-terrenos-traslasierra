@@ -71,7 +71,7 @@ class SafariScraperCompleto:
             'fecha': datetime.now().strftime('%Y-%m-%d')
         }
         
-        if terreno['titulo'] and terreno['url']:
+        if terreno['titulo'] and terreno['url'] and terreno['precio_usd'] and terreno['superficie_m2']:
             self.terrenos.append(terreno)
             return True
         return False
